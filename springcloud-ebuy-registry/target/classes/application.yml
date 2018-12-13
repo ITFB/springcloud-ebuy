@@ -1,0 +1,16 @@
+server:
+  port: 6000
+
+eureka:
+  # 设置eureka实例
+  instance:
+    hostname: localhost
+  client:
+    # 是否将本身注册到Eureka Server中
+    registerWithEureka: false
+    # 是否从其他注册中心获取信息 （当前是单点Eureka Server）
+    fetchRegistry: false
+    # 设置与Eureka Server交互地址 服务的注册、服务发现依靠这个地址  http://locahost:6001/eureka
+    serviceUrl:
+      defaultZone: http://localhost:6000/eureka/
+

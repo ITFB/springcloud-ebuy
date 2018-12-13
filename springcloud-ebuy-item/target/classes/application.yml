@@ -1,0 +1,31 @@
+mybatis:
+  config-location: classpath:mybatis/sqlMapConfig.xml
+  type-aliases-package: com.igeek.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/ebuy?characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  # 很重要 当前应用的标识（在Eureka Server中会体现）
+  # 一定不能变
+  application:
+    name: ebuy-item
+server:
+  port: 8000
+
+
+eureka:
+  # 修改实例的ID
+  instance:
+    instance-id: ebuy-item
+    # 偏好IP地址设置
+    prefer-ip-address: true
+  client:
+    # 设置与Eureka Server交互地址 服务的注册、服务发现依靠这个地址  http://locahost:6001/eureka
+    serviceUrl:
+      defaultZone: http://localhost:6000/eureka

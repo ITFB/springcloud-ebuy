@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-ebuy-common" />
+        <module name="springcloud-ebuy-gateway" />
+        <module name="springcloud-ebuy-item" />
+        <module name="springcloud-ebuy-manage-web" />
+        <module name="springcloud-ebuy-registry" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-ebuy-item-controller" target="1.8" />
+      <module name="springcloud-ebuy-item-dao" target="1.8" />
+      <module name="springcloud-ebuy-item-provider" target="1.8" />
+      <module name="springcloud-ebuy-item-service" target="1.8" />
+      <module name="springcloude-buy-item-interface" target="1.8" />
+      <module name="test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
